@@ -1,0 +1,133 @@
+﻿/*-----CSS RESET---------*/
+a {
+    transition: 0.2s all ease-in;
+    &:hover,&:focus {
+        transition: 0.2s all ease-out;
+        outline: 0;
+        text-decoration: none;
+
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $base-text-color;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-weight: bold;
+}
+
+.ico-left {
+    position: relative;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.ico-right {
+    position: relative;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+input {
+    &:hover,&:focus {
+        outline: none;
+    }
+}
+b,strong {font-weight: bold;}
+img {border: 0;}
+
+
+.divBlockL {
+    width: 100%;
+    float: left;
+    display: block;
+}
+
+.divBlockR {
+    width: 100%;
+    float: right;
+    display: block;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+
+.npd {
+    padding: 0 !important;
+
+    &t {
+        padding-top: 0 !important;
+    }
+
+    &b {
+        padding-bottom: 0 !important;
+    }
+
+    &l {
+        padding-left: 0 !important;
+    }
+
+    &r {
+        padding-right: 0 !important;
+    }
+}
+
+.nmg {
+    margin: 0 !important;
+
+    &t {
+        margin-top: 0 !important;
+    }
+
+    &b {
+        margin-bottom: 0 !important;
+    }
+
+    &l {
+        margin-left: 0 !important;
+    }
+
+    &r {
+        margin-right: 0 !important;
+    }
+}
+
+
+@include mq(max-xs) {
+    .npd {
+        &t {
+            padding-top: 15px !important;
+        }
+
+        &b {
+            padding-bottom: 15px !important;
+        }
+
+        &l {
+            padding-left: 15px !important;
+        }
+
+        &r {
+            padding-right: 15px !important;
+        }
+    }
+}

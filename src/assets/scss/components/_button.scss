@@ -1,0 +1,40 @@
+﻿
+.bt {
+    
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    transition:0.2s ease-in-out;
+    border-radius: 4px;
+    padding: 0 20px;
+}
+
+.bt-block {
+    width: 100%;
+    float: left;
+}
+
+.bt-primary {
+    color: #fff;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &:hover {
+        color: $color-primary;
+        background-color:#fff;
+    }
+}
+
+.bt-info {
+    background-color: $color-info;
+    border: 1px solid $color-info;
+    color: #fff;
+    &:hover {
+        color: $color-info;
+        background-color:#fff;
+    }
+}

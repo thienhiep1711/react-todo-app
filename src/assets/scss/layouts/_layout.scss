@@ -1,0 +1,59 @@
+﻿
+html {
+    background-color: $base-background;
+}
+
+body {
+    font-family: $base-font;
+    font-size:$base-font-size;
+    color: $base-text-color;
+    font-weight: 400;
+}
+
+#wrapper {
+    float: left;
+    width: 100%;
+    transition: margin 300ms ease;
+
+    &.open-sidebar {
+        margin-left: 270px;
+    }
+}
+
+.wrapper-main {
+    float: left;
+    width: 100%;
+}
+
+.wrapper-content {
+    float: left;
+    width: 100%;
+}
+
+/*Scroll Top*/
+#scrollTop {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    background: $base-color-primary;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    opacity: 0.8;
+    display: none;
+    border-radius: 3px;
+    z-index: 998;
+
+    span {
+        display: block;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
